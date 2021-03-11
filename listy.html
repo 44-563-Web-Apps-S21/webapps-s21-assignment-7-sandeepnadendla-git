@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>List Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        .flex-container {
+            display: inline-flex;
+            background-color: orange;
+        }
+
+        .flex-container>div {
+            background-color: #80ffb0;
+            margin: 10px;
+            padding: 23px;
+            border-radius: 46px;
+            font-size: 29px;
+            font-family: cursive;
+        }
+
+        #button {
+            width: 150px;
+            height: 50px;
+        }
+
+
+
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+                background-color: rgb(211, 142, 15);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-dark">sandeep Nadendla builds a list</h1>
+    <label for="text" id="12" style="font-size:25px" ;>Enter a word</label>
+    <input type="text" id="text" name="form1_text"> <br><br>
+
+    <div class="flex-container" id="target">
+        <div class="listy"> row item 1</div>
+        <div class="listy">row item 2</div>
+        <div class="listy"> row item 3</div>
+    </div>
+
+    <p> <b>click the button to add the row item</b>
+    </p>
+    <button onclick="makeNewDiv()" class="btn btn-warning" id="button">Add one</button>
+
+
+
+
+</body>
+
+</html>
