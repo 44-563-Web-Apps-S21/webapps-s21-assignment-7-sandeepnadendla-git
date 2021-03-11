@@ -30,6 +30,7 @@
 
     <script>
         var myTime = undefined;
+        var timeStarter=Math.floor(Math.random() * 8) + 2;;
         function recordReact() {
             myTime = Date.now()
             console.log(myTime)
@@ -37,11 +38,11 @@
         }
 
         function startTime() {
-            for (let i = 3; i >= 0; i--) {
+            for (let i = timeStarter; i >= 0; i--) {
                 setTimeout(
                     () => {
                         document.getElementById("countdown").innerHTML = "Count :" + i
-                    }, (3 - i) * 1000, i)
+                    }, (timeStarter - i) * 1000, i)
             }
 
             setTimeout((function () {
