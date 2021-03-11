@@ -42,47 +42,100 @@
     <h1 style="text-align: center; font-family: cursive;">Find the Treasure Sandeep Nadendla</h1>
     <div class="container-fluid frsthd">Click on the squares to find the treasure</div>
     <div class="row">
-        <div class="container col-md-5" id="clicks">Number of clicks is zero.</div>
+        <div class="container col-md-5" id="clicks">Number of clicks is <span id="clickNum">zero</span>.</div>
         <div class="container col-md-5" id="distance">Distance is unknown.</div>
     </div>
     <div class="container">
         <div class="row container" style="margin-left: 173px;">
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
+            <div class="border"> <img id="pic1" onclick="makeGuess(0)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic2" onclick="makeGuess(1)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic3" onclick="makeGuess(2)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic4" onclick="makeGuess(3)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic5" onclick="makeGuess(4)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
         </div>
         <div class="row container" style="margin-left: 173px;">
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
+            <div class="border"> <img id="pic6" onclick="makeGuess(5)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic7" onclick="makeGuess(6)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic8" onclick="makeGuess(7)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic9" onclick="makeGuess(8)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic10" onclick="makeGuess(9)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
         </div>
         <div class="row container" style="margin-left: 173px;">
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
+            <div class="border"> <img id="pic11" onclick="makeGuess(10)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic12" onclick="makeGuess(11)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic13" onclick="makeGuess(12)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic14" onclick="makeGuess(13)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic15" onclick="makeGuess(14)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
         </div>
         <div class="row container" style="margin-left: 173px;">
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
+            <div class="border"> <img id="pic16" onclick="makeGuess(15)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic17" onclick="makeGuess(16)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic18" onclick="makeGuess(17)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic19" onclick="makeGuess(18)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic20" onclick="makeGuess(19)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
         </div>
         <div class="row container" style="margin-left: 173px;">
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
-            <div class="border"> <img src="images/dustyimg.jpg" width="170" height="170"></div>
+            <div class="border"> <img id="pic21" onclick="makeGuess(20)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic22" onclick="makeGuess(21)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic23" onclick="makeGuess(22)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic24" onclick="makeGuess(23)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
+            <div class="border"> <img id="pic25" onclick="makeGuess(24)" src="images/dustyimg.jpg" width="170"
+                    height="170"></div>
         </div>
     </div>
-</body>
+    <script>
+        var ids = ["pic1", "pic2", "pic3", "pic4", "pic5", "pic6", "pic7", "pic8", "pic9", "pic10", "pic11", "pic12", "pic13", "pic14"
+            , "pic15", "pic16", "pic17", "pic18", "pic19", "pic20", "pic21", "pic22", "pic23", "pic24", "pic25"];
+        var clickCount = 0;
+        var treasureLocation = 18;
+        function makeGuess(position) {
+            var imgElement = document.getElementById(ids[position]);
+            if (position != treasureLocation) {
+                imgElement.src = "images/empty-treasure.jpg";
+            }
+            else {
+                imgElement.src = "images/treasure.jpg";
+            }
+            clickCount++;
+            document.getElementById("clickNum").innerHTML = clickCount;
+            out = document.getElementById("distance")
+            out.innerHTML = "Distance is " + distance(position, treasureLocation);
+        }
+        function distance (pos1, pos2){
+            var nxtpos = pos1 - pos2;
+            if (nxtpos == 0) {
+                return 0;
+            } else {
+                var horizonatl = Math.abs(Math.floor((pos2 / 5)) - Math.floor((pos1 / 5)))
+                var vertical = Math.abs(Math.floor((pos2 % 5 - pos1 % 5)));
+                return horizonatl + vertical;
+            }
+        }
+    </script>
 </body>
 
 </html>
