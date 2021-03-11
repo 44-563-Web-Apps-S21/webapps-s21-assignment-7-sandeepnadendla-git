@@ -51,11 +51,40 @@
         <div class="listy"> row item 3</div>
     </div>
 
-    <p> <b>click the button to add the row item</b>
+    <p>
+         <b>click the button to add the row item</b>
     </p>
-    <button onclick="makeNewDiv()" class="btn btn-warning" id="button">Add one</button>
+    <button onclick="makeNewDiv()" class="btn btn-warning" id="button">Add One</button>
 
 
+    <script>
+        function makeNewDiv() {
+            const element = document.createElement("div");
+            element.innerHTML = document.getElementById("text").value;
+            element.setAttribute('class', 'listy');
+            element.style.color = "orange"
+            var i;
+            var listyItems = document.getElementsByClassName("listy");
+            len = listyItems.length;
+            var r = 0;
+            if (len > 8) {
+                for (var k = 0; k < 8; k++) {
+                    if (listyItems[k].innerHTML == element.innerHTML) {
+                        listyItems[k].remove();
+                        console.log("We are getting rid of duplicates");
+                        r = 1;
+                        break;
+                    }
+                }
+                if (r == 0) {
+                    i = Math.floor((Math.random() * 9) + 0);
+                    listyItems[i].remove();
+                }
+            }
+            document.getElementById('target').appendChild(element)
+    
+        }
+        </script>
 
 
 </body>
